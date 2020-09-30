@@ -23,7 +23,7 @@ def readSqliteTable():
      return render_template("viewsinglerecord.html", rows=rows[0],name=name)
     except:
       rows = 'Not available'
-      return render_template("viewsinglerecord.html", rows=rows, name=name)
+      return render_template("viewsinglerecord.html", rows=rows)
     finally:
       con.close()
 
